@@ -37,8 +37,8 @@ namespace TodoMvc.Controllers {
             if(!successful) {
                 return BadRequest(new { Error= "Could not add item"});
             }
-
-            return Ok();
+            return Redirect("/todo");
+            //return Ok();
         }
 
         // Action GET

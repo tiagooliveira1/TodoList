@@ -34,7 +34,7 @@ namespace TodoMvc.Services {
             _context.Items.Add(entity);
 
             var saveResult = await _context.SaveChangesAsync();
-
+            
             return saveResult == 1;
         }
 
